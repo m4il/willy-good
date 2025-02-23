@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home';
 import StarterFactory from './pages/starter-journey-here/start';
 // import About from './pages/About';
 
 function App() {
   return (
-    <BrowserRouter className="App" basename="/willy-good">
+    <HashRouter className="App">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/start" element={<StarterFactory />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

@@ -5,7 +5,7 @@ import StarterFactory from './pages/starter-journey-here/start';
 
 function App() {
   return (
-    <HashRouter className="App" basename="/willy-good">
+    <HashRouter className="App">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/start" element={<StarterFactory />} />

@@ -18,7 +18,7 @@ export const FeedStarter = () => {
     const [needsFeeding, setNeedsFeeding] = useState(daysSinceLastFeed !== 0)
     const [hasFlour, setHasFlour] = useState(false)
     const [hasWater, setHasWater] = useState(false)
-    const [mousePos, setMousePos] = useState({});
+    const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
     const [imageCenter, setImageCenter] = useState(`0px, 0px`);
     const [onImage, setOnImage] = useState(false);
     const [distanceX, setDistanceX] = useState(null);

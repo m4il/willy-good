@@ -95,7 +95,7 @@ export const FeedStarter = () => {
             <Jar className='jar-and-instructions--jar' hasFlour={hasFlour} hasWater={hasWater} starterHeight={starterHeight} mode={daysSinceLastFeed === -1 ? "empty" : "fresh-feed"} />
             <div style={{ textAlign: 'center' }}>
                 {instructions}
-                {redirect && <>In the meantime, browse my <a href="/willy-good/">website</a>.</>}
+                {redirect && <>In the meantime, browse my <a href="/">website</a>.</>}
             </div>
         </div>
         {needsFeeding && <button onClick={() => setHasWater(true)} className="ingredient ingredient-left"><img src={waterPic} /></button>}

@@ -95,7 +95,7 @@ export const FeedStarter = () => {
             <Jar className='jar-and-instructions--jar' hasFlour={hasFlour} hasWater={hasWater} starterHeight={starterHeight} mode={daysSinceLastFeed === -1 ? "empty" : "fresh-feed"} />
             <div style={{ textAlign: 'center' }}>
                 {instructions}
-                {redirect && <>In the meantime, browse my <a href="/">website</a>.</>}
+                {redirect && <>In the meantime, browse my <a href="/willy-good/">website</a>.</>}
             </div>
         </div>
         {needsFeeding && <button onClick={() => setHasWater(true)} className="ingredient ingredient-left"><img src={waterPic} /></button>}
@@ -126,8 +126,8 @@ export const StarterFactory = () => {
         setClicks((old) => (old + 1))
     }
 
-    if (window.innerWidth <= 844) {
-        window.location.href = "/"
+    if (starterName && window.innerWidth <= 844) {
+        window.location.href = "/willy-good/"
     }
 
     if (starterName) {

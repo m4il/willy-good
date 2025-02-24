@@ -122,9 +122,10 @@
 }
 
 .tv-text {
+    font-family: "Courier New", monospace;
     position: absolute;
     left: 28px;
-    top: -90px;
+    top: -93px;
     color: #69f669;
     font-size: 10px;
     font-weight: 800;
@@ -173,14 +174,27 @@
 }
 
 .mobile-tv-info {
+    font-family: "Courier New", monospace;
     color: green;
     font-size: 30px;
     font-weight: 800;
     position: absolute;
-    left: 18%;
-    top: 20%;
-    width: 46%;
+    left: 20%;
+    top: 12%;
+    height: 31%;
+    overflow-y: auto;
+    width: 61%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: space-between;
+
+    a {
+        color: green
+    }
+}
+
+.mobile-tv-info-bottomline {
+    text-align: right;
+    cursor: pointer;
 }

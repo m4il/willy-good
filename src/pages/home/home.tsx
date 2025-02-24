@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { MobileHome } from './mobile-home'
 import './home.css'
 
 const colorsMap = (b: boolean) => (
@@ -35,17 +36,7 @@ export const Home = () => {
     }, [setClient])
 
     if (isMobile) {
-        return <div className="mobile-home">
-            <img className="mobile-tv" src={process.env.PUBLIC_URL + "/pixel-tv-mobile.png"}></img>
-            <div className="mobile-tv-info">
-                Welcome! Click a link below to browse my site!
-                <a href="/willy-good/#baking">{">"} baking</a>
-                <a href="/willy-good/#bikes">{">"} bikes</a>
-                <a href="/willy-good/#music">{">"} music</a>
-                <a href="/willy-good/#photography">{">"} photography</a>
-                <a href="/willy-good/#photography">{">"} about me</a>
-            </div>
-        </div>
+        return <MobileHome />
     }
 
     return <div style={{ backgroundImage: linearGradientString }} className="home">

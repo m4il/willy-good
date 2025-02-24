@@ -1,19 +1,15 @@
 {
   "files": {
-    "main.css": "/willy-good/static/css/main.eb14ae6c.css",
-    "main.js": "/willy-good/static/js/main.0ff4adbc.js",
-    "static/js/453.3f3c33f3.chunk.js": "/willy-good/static/js/453.3f3c33f3.chunk.js",
-    "static/media/flour.png": "/willy-good/static/media/flour.afbfa2c506d8834d954e.png",
-    "static/media/fork.png": "/willy-good/static/media/fork.066f44b5a46b7b743456.png",
-    "static/media/empty-jar.png": "/willy-good/static/media/empty-jar.b7de7bb8cbbf33f06ab2.png",
-    "static/media/water.png": "/willy-good/static/media/water.8509eedc57419e646cf7.png",
-    "index.html": "/willy-good/index.html",
-    "main.eb14ae6c.css.map": "/willy-good/static/css/main.eb14ae6c.css.map",
-    "main.0ff4adbc.js.map": "/willy-good/static/js/main.0ff4adbc.js.map",
-    "453.3f3c33f3.chunk.js.map": "/willy-good/static/js/453.3f3c33f3.chunk.js.map"
+    "main.css": "/static/css/main.564580a9.css",
+    "main.js": "/static/js/main.ce226cf8.js",
+    "static/js/453.3f3c33f3.chunk.js": "/static/js/453.3f3c33f3.chunk.js",
+    "index.html": "/index.html",
+    "main.564580a9.css.map": "/static/css/main.564580a9.css.map",
+    "main.ce226cf8.js.map": "/static/js/main.ce226cf8.js.map",
+    "453.3f3c33f3.chunk.js.map": "/static/js/453.3f3c33f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb14ae6c.css",
-    "static/js/main.0ff4adbc.js"
+    "static/css/main.564580a9.css",
+    "static/js/main.ce226cf8.js"
   ]
 }

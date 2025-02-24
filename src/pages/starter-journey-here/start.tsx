@@ -10,7 +10,7 @@ export const FeedStarter = () => {
     const lastFeedingDate = localStorage.getItem("last-feeding-date")
     let daysSinceLastFeed = -1
     if (lastFeedingDate) {
-        const today = new Date("2025-02-25").getTime()
+        const today = new Date().getTime()
         const feeding = new Date(lastFeedingDate).getTime()
         daysSinceLastFeed = Math.floor(Math.abs(today - feeding) / 86400000)
     }

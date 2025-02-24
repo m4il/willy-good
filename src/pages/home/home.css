@@ -1,0 +1,143 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-centerer {
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.shelf {
+    position: relative;
+    width: 400px;
+    height: 20px;
+    background-color: rgb(149, 79, 26);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.couch img {
+    height: 350px;
+}
+
+.table img {
+    height: 150px;
+}
+
+.lamp img {
+    height: 340px;
+}
+
+.cat {
+    left: 250px;
+    top: -90px;
+
+    img {
+        height: 100px;
+    }
+}
+
+.lamp {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 350px;
+
+    :hover {
+        cursor: pointer;
+        filter: drop-shadow(8px 8px 10px white);
+    }
+}
+
+.couch {
+    position: relative;
+}
+
+.table {
+    align-self: flex-end;
+    position: relative;
+}
+
+.actionable {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    :hover {
+        cursor: pointer;
+        filter: drop-shadow(8px 8px 10px white);
+    }
+}
+
+.guitar {
+    top: 30px;
+    right: 30px;
+
+    :hover {
+        rotate: -15deg;
+    }
+
+    img {
+        height: 180px;
+    }
+}
+
+.jar {
+    left: 80%;
+    bottom: 10px;
+
+    img {
+        height: 80px;
+    }
+
+    :hover {
+        rotate: 15deg;
+    }
+}
+
+.bread {
+    right: 0;
+    top: -75px;
+
+    img {
+        height: 80px;
+    }
+
+    :hover {
+        rotate: 15deg;
+    }
+}
+
+.tv {
+    position: absolute;
+    left: 0;
+    top: -145px;
+    height: 80px;
+}
+
+.tv-text {
+    position: absolute;
+    left: 28px;
+    top: -90px;
+    color: #69f669;
+    font-size: 10px;
+    font-weight: 800;
+    width: 80px;
+    text-wrap: balanced;
+}
+
+.vines {
+    z-index: 2;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    top: -60px;
+    height: 350px;
+}

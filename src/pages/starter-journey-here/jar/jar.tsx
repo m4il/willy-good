@@ -1,5 +1,4 @@
 import React from 'react'
-import JarIMG from './empty-jar.png'
 import './jar.css'
 
 interface Props {
@@ -20,6 +19,6 @@ export const Jar = ({ className = "", mode = "empty", starterHeight = 0, hasFlou
             {mode === 'fresh-feed' && <div style={{ height: starterHeight }} className={`starter-fresh`} />}
             {mode === 'bubbly' && <div style={{ height: starterHeight }} className={`starter-bubbly`} />}
         </div>
-        <img className="starter-jar" src={JarIMG}></img>
+        <img className="starter-jar" src={process.env.PUBLIC_URL + "/pixel-jar.png"}></img>
     </div>
 }

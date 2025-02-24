@@ -1,0 +1,39 @@
+.subpage-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    height: 48px;
+    position: sticky;
+    width: 100%;
+    background-color: #28487d;
+}
+
+.navbar-home img {
+    height: 36px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+
+}
+
+.navbar-home:hover {
+    filter: drop-shadow(2px 2px 2px white);
+}
+
+.content {
+    height: calc(100% - 48px);
+    width: 100%;
+    overflow-y: auto;
+    background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #28487d 5px, #28487d 10px), repeating-linear-gradient(to right, #617ca2, #617ca2 5px, #28487d 5px, #28487d 10px)
+}
+
+.subpage {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    background-color: #617ca2;
+}

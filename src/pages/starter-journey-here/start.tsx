@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import './start.css'
 import { Jar } from './jar/jar'
-import waterPic from './water.png'
-import flourPic from './flour.png'
-import forkPic from './fork.png'
+import './start.css'
+import { SubpageWrapper } from '../subpage-wrapper'
+
+
 
 
 export const FeedStarter = () => {
     const lastFeedingDate = localStorage.getItem("last-feeding-date")
     let daysSinceLastFeed = -1
     if (lastFeedingDate) {
-        const today = new Date().getTime()
+        const today = new Date("2025-02-25").getTime()
         const feeding = new Date(lastFeedingDate).getTime()
         daysSinceLastFeed = Math.floor(Math.abs(today - feeding) / 86400000)
     }
@@ -87,19 +87,20 @@ export const FeedStarter = () => {
 
     const isMixingForkClass = isMixing ? onImage ? 'starter-container-mixing-grab' : 'starter-container-mixing-no-grab' : ''
 
-    return <div className={`starter__container ${isMixingForkClass}`}>
+    return <SubpageWrapper><div className={`starter__container ${isMixingForkClass}`}>
         {isMixing &&
-            <div style={{ zIndex: 2, height: '100%', width: '100%', backgroundRepeat: `no-repeat`, backgroundImage: `url(${forkPic})`, position: 'absolute', backgroundPosition: imageCenter }} onMouseDown={handleClickFork} onDragEnter={handleClickFork} onDragEnd={() => setOnImage(false)} onMouseUp={() => setOnImage(false)} onMouseMove={handleMouseMove} />}
-        {needsFeeding && <button onClick={() => setHasFlour(true)} className="ingredient ingredient-right"><img src={flourPic} /></button>}
+            <div style={{ zIndex: 2, height: '100%', width: '100%', backgroundRepeat: `no-repeat`, backgroundImage: `url(${process.env.PUBLIC_URL}/pixel-fork.png)`, position: 'absolute', backgroundPosition: imageCenter }} onMouseDown={handleClickFork} onDragEnter={handleClickFork} onDragEnd={() => setOnImage(false)} onMouseUp={() => setOnImage(false)} onMouseMove={handleMouseMove} />}
+        {needsFeeding && <button onClick={() => setHasFlour(true)} className="ingredient ingredient-right"><img src={process.env.PUBLIC_URL + "/pixel-wheat.png"} /></button>}
         <div className="jar-and-instructions">
             <Jar className='jar-and-instructions--jar' hasFlour={hasFlour} hasWater={hasWater} starterHeight={starterHeight} mode={daysSinceLastFeed === -1 ? "empty" : "fresh-feed"} />
             <div style={{ textAlign: 'center' }}>
                 {instructions}
-                {redirect && <>In the meantime, browse my <a href="/willy-good/">website</a>.</>}
+                {redirect && <>In the meantime, browse my <a href="/">website</a>.</>}
             </div>
         </div>
-        {needsFeeding && <button onClick={() => setHasWater(true)} className="ingredient ingredient-left"><img src={waterPic} /></button>}
+        {needsFeeding && <button onClick={() => setHasWater(true)} className="ingredient ingredient-left"><img src={process.env.PUBLIC_URL + "/pixel-water.png"} /></button>}
     </div>
+    </SubpageWrapper>
 }
 
 export const StarterFactory = () => {
@@ -134,19 +135,20 @@ export const StarterFactory = () => {
         return <FeedStarter />
     }
 
-    return <div className="starter__container">
-        <Jar className="starter-jar" />
-        <div className="starter-name-tag">
-            <div className="starter-name-tag__header"><div className="starter-name-tag__hello">HELLO</div><div>my name is</div></div>
-            <div className="starter-inputs">
-                <input className="starter-name-input" type="text" onChange={(e) => setNewStarterName(e.target.value)} value={newStarterName} />
-                <button className="starter-name-submit" onClick={onClick}>ok</button>
+    return <SubpageWrapper>
+        <div className="starter__container">
+            <Jar className="starter-jar" />
+            <div className="starter-name-tag">
+                <div className="starter-name-tag__header"><div className="starter-name-tag__hello">HELLO</div><div>my name is</div></div>
+                <div className="starter-inputs">
+                    <input className="starter-name-input" type="text" onChange={(e) => setNewStarterName(e.target.value)} value={newStarterName} />
+                    <button className="starter-name-submit" onClick={onClick}>ok</button>
+                </div>
+                <div className="starter-name-error">{errorMsg}</div>
+                <div className="starter-name-tag__footer" />
             </div>
-            <div className="starter-name-error">{errorMsg}</div>
-            <div className="starter-name-tag__footer" />
-
         </div>
-    </div>
+    </SubpageWrapper>
 }
 
 export default StarterFactory

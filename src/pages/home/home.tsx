@@ -11,7 +11,7 @@ export const Home = () => {
     const linearGradientString = `repeating-linear-gradient(to bottom, transparent, transparent 5px, ${colors[0]} 5px, ${colors[0]} 10px), repeating-linear-gradient(to right, ${colors[1]}, ${colors[1]} 5px, ${colors[0]} 5px,${colors[0]} 10px)`
     return <div style={{ backgroundImage: linearGradientString }} className="home">
         <div className="shelf">
-            <a href="/#starter" className="actionable jar">
+            <a href="/willy-good/#starter" className="actionable jar">
                 <img src={process.env.PUBLIC_URL + "/pixel-jar.png"}></img>
             </a>
 
@@ -20,7 +20,7 @@ export const Home = () => {
         <div className="home-centerer">
             <div className="table">
                 <img src={process.env.PUBLIC_URL + "/pixel-table.png"}></img>
-                <a className="actionable bread" href="/#baking">
+                <a className="actionable bread" href="/willy-good/#baking">
                     <img src={process.env.PUBLIC_URL + "/pixel-bread.png"}></img>
                 </a>
                 <img className="tv" src={process.env.PUBLIC_URL + "/pixel-tv.png"}></img>
@@ -28,8 +28,8 @@ export const Home = () => {
             </div>
             <div className="couch">
                 <img src={process.env.PUBLIC_URL + "/pixel-couch.png"}></img>
-                <a className="actionable guitar" href="/#music"><img src={process.env.PUBLIC_URL + "/pixel-guitar.png"}></img></a>
-                <a className="actionable cat" href="/#about"><img src={process.env.PUBLIC_URL + "/pixel-cat.png"}></img></a>
+                <a className="actionable guitar" href="/willy-good/#music"><img src={process.env.PUBLIC_URL + "/pixel-guitar.png"}></img></a>
+                <a className="actionable cat" href="/willy-good/#about"><img src={process.env.PUBLIC_URL + "/pixel-cat.png"}></img></a>
             </div>
             <button className="lamp" onClick={() => setColorMode((old) => !old)}>
                 <img src={process.env.PUBLIC_URL + "/pixel-lamp.png"}></img>

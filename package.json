@@ -2,7 +2,7 @@
   "name": "willy-good-stuff",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://m4il.github.io/",
+  "homepage": "http://m4il.github.io/willy-good/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

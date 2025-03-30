@@ -69,7 +69,7 @@
     border: none;
     outline: none;
 
-    :hover {
+    &:hover {
         cursor: pointer;
         filter: drop-shadow(8px 8px 10px white);
     }
@@ -119,6 +119,25 @@
     left: 0;
     top: -145px;
     height: 80px;
+}
+
+
+.picture-frame {
+    position: absolute;
+    left: 50px;
+    top: -400px;
+
+    img {
+        position: absolute;
+        height: 200px;
+    }
+}
+
+.picture-frame__picture {
+    height: 180px !important;
+    width: 120px;
+    left: 20px;
+    top: 10px;
 }
 
 .tv-text {

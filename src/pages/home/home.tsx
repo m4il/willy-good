@@ -56,6 +56,10 @@ export const Home = () => {
                 </a>
                 <img className="tv" src={process.env.PUBLIC_URL + "/pixel-tv.png"}></img>
                 <div className="tv-text">Hello! Welcome to my room full of all the willy good stuff in my life!</div>
+                <a className="actionable picture-frame" href="/willy-good/#photography">
+                    <img className="picture-frame__picture" src={process.env.PUBLIC_URL + "/photog/file_16.jpg"}></img>
+                    <img src={process.env.PUBLIC_URL + "/frame.png"}></img>
+                </a>
             </div>
             <div className="couch">
                 <img src={process.env.PUBLIC_URL + "/pixel-couch.png"}></img>

@@ -128,7 +128,7 @@
     top: -400px;
 
     img {
-        position: absolute;
+        position: absolute !important;
         height: 200px;
     }
 }
@@ -141,14 +141,13 @@
 }
 
 .tv-text {
-    font-family: "Courier New", monospace;
     position: absolute;
-    left: 28px;
-    top: -93px;
+    left: 34px;
+    top: 54px;
     color: #69f669;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 800;
-    width: 80px;
+    width: 72px;
     text-wrap: balanced;
 }
 
@@ -163,7 +162,6 @@
 }
 
 /* SPOTLIGHT */
-
 .spotlight {
     z-index: 4;
     position: fixed;

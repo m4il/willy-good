@@ -10,8 +10,8 @@ export const MobileHome = () => {
             {!skip && displayText ? <><div className="mobile-tv-info-topline">{displayText}</div><div className="mobile-tv-info-bottomline" onClick={() => setSkip(true)}>skip</div></> : (
                 <>
                     {"> "}<a href="/willy-good/#baking">baking</a>
-                    {"> "}<a href="/willy-good/#bikes">bikes</a>
-                    {"> "}<a href="/willy-good/#music">music</a>
+                    {/* {"> "}<a href="/willy-good/#bikes">bikes</a> */}
+                    {"> "}<a href="/willy-good/#blog">blog</a>
                     {"> "}<a href="/willy-good/#photography">photography</a>
                     {"> "}<a href="/willy-good/#photography">about me</a>
                 </>

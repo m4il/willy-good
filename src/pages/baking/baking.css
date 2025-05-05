@@ -1,0 +1,24 @@
+.sourdough-guide {
+  margin-top: 20px;
+  padding: 40px 80px;
+  background-color: white;
+  font-family: monaco;
+}
+
+
+.sourdough-day {
+  padding-left: 40px;
+}
+
+
+.sourdough-photos {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  img {
+    width: 200px;
+    height: auto;
+  }
+}

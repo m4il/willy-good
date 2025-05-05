@@ -7,6 +7,8 @@ import Bikes from './pages/bikes/bikes';
 import Photography from './pages/photog/photography';
 import About from './pages/about/about';
 import Blog from './pages/blog/blog';
+import AmsterdamGateway from './pages/blog/blogs/amsterdam/amsterdam-gateway';
+import PhotogDark from './pages/photog/photog-dark';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         <Route path="/bikes" element={<Bikes />} />
         <Route path="/baking" element={<Baking />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/bikes-bridges-battery-mis-management" element={<AmsterdamGateway />} />
         <Route path="/photography" element={<Photography />} />
+        <Route path="/photography/dark" element={<PhotogDark />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </HashRouter>

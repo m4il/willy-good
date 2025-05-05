@@ -16,3 +16,114 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
+/* Start dark */
+.photog-dark {
+  .navbar {
+    z-index: 20;
+    background-color: #34000d;
+  }
+  .content {
+    background-image: none;
+  }
+}
+
+.photog-hallway {
+  position: relative;
+  height: calc(100% - 48px);
+  width: fit-content;
+  background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #34000d 5px, #34000d 10px), repeating-linear-gradient(to right, #800020, #800020 5px, #34000d 5px, #34000d 10px);
+  display: flex;
+}
+
+.dark-photo {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  width: 700px;
+}
+
+.blacktop-bumper {
+  height: 15%;
+  background-color: black
+}
+
+.art-light {
+  width: 100%;
+  height: calc(100% - 48px);
+  background:
+    linear-gradient(310deg, #00000000, #00000000 72%, #000000bb 82%),
+    linear-gradient(50deg, #00000000, #00000000 72%, #000000bb 82%);
+}
+
+.art-light--off {
+  background:
+    linear-gradient(310deg, #00000000, #00000000 0%, #000000bb 100%),
+    linear-gradient(50deg, #00000000, #00000000 0%, #000000bb 100%);
+}
+
+.art-frame {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: -1;
+  width: 60%;
+  height: 60%;
+}
+
+.art-frame__frame {
+  position: absolute;
+  width: 100%;
+  height: 100%
+}
+
+.art-frame__frame--horizontal {
+  rotate: 90deg;
+}
+
+
+.photo-lamp {
+  position: absolute;
+  width: 20%;
+  left: 40%;
+  top: 6%;
+}
+
+.dark-photo__photo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+  border: 10px solid rgb(255, 254, 248);
+  outline: 2px solid rgb(255, 235, 122);
+  flex-grow: 0;
+  justify-self: center;
+}
+
+.dark-photo-matte {
+  z-index: -1;
+  position: relative;
+  background-color: rgb(255, 252, 232);
+  width: 60%;
+  height: 85%;
+  top: 4%;
+  left: 21%;
+  display: flex;
+  align-items: center;
+}
+
+.dark-photo-matte--horizontal {
+  width: 85%;
+  height: 60%;
+  top: 21%;
+  left: 12%
+}
+
+.photog-floor {
+  position: absolute;
+  background-color: #34000d;
+  width: 100vw;
+  height: 80px;
+  bottom: 0px;
+}

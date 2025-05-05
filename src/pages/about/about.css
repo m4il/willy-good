@@ -1,0 +1,42 @@
+.about-me-content {
+  padding: 10px;
+  text-wrap: wrap;
+}
+
+.about-me-photo {
+  max-width: min(250px, 100%);
+  height: auto;
+  margin-top: 20px;
+  flex-grow: 0;
+}
+
+.about-me {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px 80px;
+  font-family: monaco;
+}
+
+.about-me-photo-surf {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.about-me-flexbox {
+  display: flex;
+  gap: 20px;
+  flex-wrap: auto;
+}
+
+@media screen and (max-width :600px) {
+  .about-me-flexbox {
+    flex-direction: column-reverse;
+  }
+  .about-me-me {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+}

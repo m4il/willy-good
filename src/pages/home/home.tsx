@@ -54,16 +54,18 @@ export const Home = () => {
                 <a className="actionable bread" href="/willy-good/#baking">
                     <img src={process.env.PUBLIC_URL + "/pixel-bread.png"}></img>
                 </a>
-                <img className="tv" src={process.env.PUBLIC_URL + "/pixel-tv.png"}></img>
+                <a className="actionable tv" href="/willy-good/#blog">
+                <img src={process.env.PUBLIC_URL + "/pixel-tv.png"}></img>
                 <div className="tv-text">Hello! Welcome to my room full of all the willy good stuff in my life!</div>
-                <a className="actionable picture-frame" href="/willy-good/#photography">
+                </a>
+                <a className="actionable picture-frame" href="/willy-good/#photography/dark/">
                     <img className="picture-frame__picture" src={process.env.PUBLIC_URL + "/photog/file_16.jpg"}></img>
                     <img src={process.env.PUBLIC_URL + "/frame.png"}></img>
                 </a>
             </div>
             <div className="couch">
                 <img src={process.env.PUBLIC_URL + "/pixel-couch.png"}></img>
-                <a className="actionable guitar" href="/willy-good/#music"><img src={process.env.PUBLIC_URL + "/pixel-guitar.png"}></img></a>
+                <a className="actionable guitar"><img src={process.env.PUBLIC_URL + "/pixel-guitar.png"}></img></a>
                 <a className="actionable cat" href="/willy-good/#about"><img src={process.env.PUBLIC_URL + "/pixel-cat.png"}></img></a>
             </div>
             <button className="lamp" onClick={() => setColorMode((old) => !old)}>

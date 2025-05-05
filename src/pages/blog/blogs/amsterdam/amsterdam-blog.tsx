@@ -68,7 +68,10 @@ export const AmsterdamBlog = () => {
     Amsterdam truly left me with so many lovely human experiences. I helped an elderly couple push their stalled car out of an intersection. We also met a man whose best friend just moved from Amsterdam to Berkeley, and we’re delivering a book from the NL to his friend in Berkeley! Hanna and even I found an adorable little gluten free bakery, and the woman who owned it kindly showed me her recipe for a gluten free baguette, my next new challenge!
     </p>
     <p>
-    We wrapped up the trip with a wonderful festival put on by AIxDesign, a collective of artists and researchers, who curated three days of talks and workshops on slow AI. A challenge to the typical “build fast, break things” rhetoric that indoctrinates much of Silicon Valley. Among the
+    We wrapped up the trip with a wonderful festival put on by AIxDesign, a collective of artists and researchers, who curated three days of talks and workshops on slow AI. A challenge to the typical “build fast, break things” rhetoric that indoctrinates much of Silicon Valley. Among the speakers was Hanna, who gave a beautiful talk on the subject of AI narratives, followed by a workshop where we used collage to re-write our own narrative of AI. I initially joined as Hanna’s plus-one, but as the festival went on, I found new friends and built relationships with artists, computer scientists, and researchers who I found so so inspiring! On top of these new potential friendships, it was so magical to see Hanna in her element, eloquently commanding a room while everyone nods intently at the connections she makes between manifest destiny and techno-optimism. People snapped photos of her slides, and came up to her after to pick her brain about the talk. Damn, she’s smart.
+    </p>
+    <p>
+      As I return to the land of toxic water and toxic-er tech bros, I can’t help but be thankful for a fully-charged phone battery. The bike journeys, the festival, and the reflections really made a beautiful week. Amsterdam welcomed us with open arms, and I look forward to visiting again soon.
     </p>
     <p>
       -------------

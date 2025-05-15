@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/willy-good/static/css/main.e4ac8a31.css",
-    "main.js": "/willy-good/static/js/main.ebc8eed0.js",
+    "main.css": "/willy-good/static/css/main.88e3ccb4.css",
+    "main.js": "/willy-good/static/js/main.546810c0.js",
     "static/js/453.3f3c33f3.chunk.js": "/willy-good/static/js/453.3f3c33f3.chunk.js",
     "index.html": "/willy-good/index.html",
-    "main.e4ac8a31.css.map": "/willy-good/static/css/main.e4ac8a31.css.map",
-    "main.ebc8eed0.js.map": "/willy-good/static/js/main.ebc8eed0.js.map",
+    "main.88e3ccb4.css.map": "/willy-good/static/css/main.88e3ccb4.css.map",
+    "main.546810c0.js.map": "/willy-good/static/js/main.546810c0.js.map",
     "453.3f3c33f3.chunk.js.map": "/willy-good/static/js/453.3f3c33f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4ac8a31.css",
-    "static/js/main.ebc8eed0.js"
+    "static/css/main.88e3ccb4.css",
+    "static/js/main.546810c0.js"
   ]
 }

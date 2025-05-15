@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 
 export const DarkPhoto = ({imgUrl, horizontal = true }: {imgUrl: string, horizontal?: boolean}) => {
 

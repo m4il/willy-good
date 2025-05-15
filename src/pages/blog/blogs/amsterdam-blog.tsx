@@ -1,7 +1,7 @@
 import React from 'react'
-import SubpageWrapper from '../../../subpage-wrapper'
-import Subpage from '../../../subpage'
-import BlogsWrapper from '../blogs-wrapper'
+import SubpageWrapper from '../../subpage-wrapper'
+import Subpage from '../../subpage'
+import BlogsWrapper from './blogs-wrapper'
 
 export const AmsterdamBlog = () => {
 
@@ -10,11 +10,14 @@ export const AmsterdamBlog = () => {
     <Subpage>
     <BlogsWrapper>
   <div>
-  <div className="amsterdam-blog-photos">
+  <div>
     </div>
     <h3>
     Bikes, Bridges, and Battery (Mis-)Management
     </h3>
+    <h5>
+    May 4, 2025
+    </h5>
     <p>
     Kick out my crutches, and I will learn to walk again
     </p>
@@ -76,7 +79,7 @@ export const AmsterdamBlog = () => {
     <p>
       -------------
     </p>
-    <div className="amsterdam-blog-photos">
+    <div className="blog-photos">
       <img src={process.env.PUBLIC_URL + '/blog/IMG_3007.jpg'} alt={'amsterdam skyline'}  />
       <img src={process.env.PUBLIC_URL + '/blog/IMG_0916.jpg'} alt={'photo of me!'}  />
       <img src={process.env.PUBLIC_URL + '/blog/IMG_3308.jpg'} alt={'photo of bike on bridge'}  />
@@ -87,5 +90,6 @@ export const AmsterdamBlog = () => {
   </SubpageWrapper>
   )
 }
+
 
 export default AmsterdamBlog

@@ -1,5 +1,5 @@
 
-.blogs-list {
+.projects-list {
   margin-top: 20px;
   margin-bottom: 20px;
   display: grid;
@@ -7,21 +7,18 @@
   gap: 20px;
 }
 
-.blog-link {
+.project-link {
   border: 1px solid white;
   border-radius: 8px;
   background-color: white;
   padding: 20px;
-  height: calc(100% - 40px);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 
   img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     object-position: top;
+    margin-top: 8px;
   }
 
   &:hover {
@@ -29,31 +26,22 @@
   }
 }
 
-.blog-link__img-centered {
-  object-position: center !important;
-}
-
-.blog-link__title {
+.project-link__title {
   color: black;
-  text-align: center;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center
 }
-
-.blog-link__date {
+.project-link__date {
   color: grey;
   text-align: right;
 }
 
-.blog-link__wrapper {
+.project-link__wrapper {
   text-decoration: none;
 }
 
 
 @media screen and (max-width: 600px) {
-  .blogs-list {
+  .projects-list {
     grid-template-columns: 1fr;
   }
 }

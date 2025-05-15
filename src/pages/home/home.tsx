@@ -1,17 +1,29 @@
 import React, { useState } from 'react'
 import { MobileHome } from './mobile-home'
 import './home.css'
+import { useSearchParams } from 'react-router-dom'
 
 const colorsMap = (b: boolean) => (
     b ? ['#28487d', '#617ca2'] : ['#34000d', '#800020']
 )
 
 export const Home = () => {
-    const [colorMode, setColorMode] = useState(true)
+    const [searchParams, setSearchParams] = useSearchParams()
+    const isDark = searchParams.get('dark') === 'true'
+
     const [isMobile, setIsMobile] = useState(false)
     const [client, setClient] = useState({ x: 0, y: 0 })
-    const colors = colorsMap(colorMode)
+    const colors = colorsMap(!isDark)
     const linearGradientString = `repeating-linear-gradient(to bottom, transparent, transparent 5px, ${colors[0]} 5px, ${colors[0]} 10px), repeating-linear-gradient(to right, ${colors[1]}, ${colors[1]} 5px, ${colors[0]} 5px,${colors[0]} 10px)`
+
+
+    const updateDarkMode = () => {
+        if (isDark) {
+            setSearchParams({})
+        } else {
+            setSearchParams({dark: 'true'})
+        }
+    }
 
     React.useEffect(() => {
         const media = window.matchMedia('(max-width: 900px)');
@@ -40,7 +52,7 @@ export const Home = () => {
     }
 
     return <div style={{ backgroundImage: linearGradientString }} className="home">
-        <div style={{ background: `radial-gradient(circle at ${client.x}px ${client.y}px, #00000000 10px, #000000ee ${colorMode ? '9999px' : '100px'})` }} className="spotlight" />
+        <div style={{ background: `radial-gradient(circle at ${client.x}px ${client.y}px, #00000000 10px, #000000ee ${!isDark ? '9999px' : '100px'})` }} className="spotlight" />
         <div className="shelf">
             <a href="/willy-good/#starter" className="actionable jar">
                 <img src={process.env.PUBLIC_URL + "/pixel-jar.png"}></img>
@@ -65,10 +77,10 @@ export const Home = () => {
             </div>
             <div className="couch">
                 <img src={process.env.PUBLIC_URL + "/pixel-couch.png"}></img>
-                <a className="actionable guitar"><img src={process.env.PUBLIC_URL + "/pixel-guitar.png"}></img></a>
+                <a className="actionable guitar" href="/willy-good/#projects"><img src={process.env.PUBLIC_URL + "/pixel-guitar.png"}></img></a>
                 <a className="actionable cat" href="/willy-good/#about"><img src={process.env.PUBLIC_URL + "/pixel-cat.png"}></img></a>
             </div>
-            <button className="lamp" onClick={() => setColorMode((old) => !old)}>
+            <button className="lamp" onClick={updateDarkMode}>
                 <img src={process.env.PUBLIC_URL + "/pixel-lamp.png"}></img>
             </button>
         </div>

@@ -126,4 +126,15 @@
   width: 100vw;
   height: 80px;
   bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex: repeat;
+  gap: 20%;
+}
+
+.photog-floor-gallery {
+  color: #8b4053;
+  align-self: center;
+  text-decoration: none;
+
 }

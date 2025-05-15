@@ -5,7 +5,7 @@
   font-family: monaco;
 }
 
-.amsterdam-blog-photos {
+.blog-photos {
   width: 100%;
   justify-content: space-around;
   display: flex;
@@ -15,4 +15,9 @@
     width: 200px;
     height: auto;
   }
+}
+
+.blog-registered {
+  font-size: 80%;
+  vertical-align: top;
 }

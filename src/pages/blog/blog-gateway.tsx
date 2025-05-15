@@ -1,14 +1,18 @@
 import { useState } from "react"
-import AmsterdamBlog from "./amsterdam-blog"
-import SubpageWrapper from "../../../subpage-wrapper"
-import Subpage from "../../../subpage"
+import SubpageWrapper from "../subpage-wrapper"
+import Subpage from "../subpage"
 
-export const AmsterdamGateway = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+interface Props {
+  children?: React.ReactNode
+  password?: string
+}
+
+export const BlogGateway = ({children, password}: Props) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(password ? false : true)
   const [pwd, setPwd] = useState('')
 
   const handleSubmit = () => {
-    if (pwd === 'tulip') {
+    if (pwd === password) {
       setIsLoggedIn(true)
     }
     setPwd('')
@@ -32,9 +36,7 @@ export const AmsterdamGateway = () => {
     )
   }
 
-  return (
-    <AmsterdamBlog />
-  )
+  return children
 }
 
-export default AmsterdamGateway
+export default BlogGateway

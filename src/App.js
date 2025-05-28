@@ -11,6 +11,8 @@ import BlogGateway from './pages/blog/blog-gateway';
 import PhotogDark from './pages/photog/photog-dark';
 import AmsterdamBlog from './pages/blog/blogs/amsterdam-blog';
 import OrlandoBlog from './pages/blog/blogs/orlando-blog';
+import MaineBlog from './pages/blog/blogs/maine-blog';
+import FirstBikePackingBlog from './pages/blog/blogs/first-bikepacking-blog';
 
 function App() {
   return (
@@ -23,13 +25,23 @@ function App() {
         <Route path="/baking" element={<Baking />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/bikes-bridges-battery-mis-management" element={
-          <BlogGateway password='tulip'>
+          <BlogGateway>
             <AmsterdamBlog />
           </BlogGateway>
         } />
         <Route path="/blog/happiest-place-on-earth" element={
           <BlogGateway password='orlando' >
             <OrlandoBlog />
+          </BlogGateway>
+        } />
+        <Route path="/blog/the-maine-event" element={
+          <BlogGateway >
+            <MaineBlog />
+          </BlogGateway>
+        } />
+        <Route path="/blog/bikepacking-1" element={
+          <BlogGateway >
+            <FirstBikePackingBlog />
           </BlogGateway>
         } />
         <Route path="/photography" element={<Photography />} />

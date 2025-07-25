@@ -13,6 +13,7 @@ import AmsterdamBlog from './pages/blog/blogs/amsterdam-blog';
 import OrlandoBlog from './pages/blog/blogs/orlando-blog';
 import MaineBlog from './pages/blog/blogs/maine-blog';
 import FirstBikePackingBlog from './pages/blog/blogs/first-bikepacking-blog';
+import RedactiveRecruiting from './pages/blog/blogs/redactive-recruiting/redactive-recruiting'
 
 function App() {
   return (
@@ -42,6 +43,11 @@ function App() {
         <Route path="/blog/bikepacking-1" element={
           <BlogGateway >
             <FirstBikePackingBlog />
+          </BlogGateway>
+        } />
+        <Route path="/blog/redactive-recruiting" element={
+          <BlogGateway >
+            <RedactiveRecruiting />
           </BlogGateway>
         } />
         <Route path="/photography" element={<Photography />} />

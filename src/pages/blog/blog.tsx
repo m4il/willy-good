@@ -6,6 +6,13 @@ import './blog.css'
 export const Blog = () => {
     return <SubpageWrapper><Subpage>
         <div className="blogs-list">
+            <a className="blog-link__wrapper" href="/willy-good/#blog/redactive-recruiting">
+            <div className="blog-link">
+                <div className="blog-link__date">June 21, 2025</div>
+                <img className="blog-link__img-centered" src={process.env.PUBLIC_URL + '/mailbox.png'} alt={'Mailbox'}  />
+                <div className="blog-link__title" >Redactive Recruiting Inbox</div>
+            </div>
+            </a>
             <a className="blog-link__wrapper" href="/willy-good/#blog/bikepacking-1">
             <div className="blog-link">
                 <div className="blog-link__date">May 26, 2025</div>

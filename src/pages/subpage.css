@@ -9,6 +9,9 @@
     position: sticky;
     width: 100%;
     background-color: #28487d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-home img {

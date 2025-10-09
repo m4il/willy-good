@@ -105,7 +105,7 @@ export const Baking = () => {
             <li>800g warm water</li>
             <li>200g active, bubbly, floaty starter. After adding the starter to the water, I like to whisk them together before adding the dry ingredients</li>
             <li>1000g flour</li>
-            <li>10g salt</li>
+            <li>20g salt</li>
         </ul>
 
         <p>Mix until well combined. You can use a big spoon or fork or your hands. A mixer isn’t necessary.</p>

@@ -1,0 +1,215 @@
+.chop-shop__sky {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  background: linear-gradient(to bottom, darkBlue, lightBlue 100%);
+  z-index: 0;
+}
+
+.chop-shop__mountain-1 {
+  content: "";
+  position: absolute;
+  bottom: -50vw;
+  left: 0;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgb(0, 92, 0);
+  transform: rotate(40deg);
+}
+
+.chop-shop__mountain-4 {
+  content: "";
+  position: absolute;
+  bottom: -60vw;
+  left: 50%;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgb(0, 76, 0);
+  transform: rotate(40deg);
+}
+
+.chop-shop__mountain-3 {
+  content: "";
+  position: absolute;
+  bottom: -70vw;
+  left: -30%;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgb(0, 79, 0);
+  transform: rotate(40deg);
+}
+
+.chop-shop__mountain-2 {
+  content: "";
+  position: absolute;
+  bottom: -65vw;
+  left: 40%;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgb(0, 87, 0);
+  transform: rotate(40deg);
+}
+
+.chop-shop__mountain-5 {
+  content: "";
+  position: absolute;
+  bottom: -70vw;
+  left: -30%;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgb(0, 79, 0);
+  transform: rotate(40deg);
+}
+
+.chop-shop__cloud-1 {
+  content: "";
+  position: absolute;
+  top: 310px;
+  left: -30%;
+  height: 10px;
+  width: 70vw;
+  background-color: rgba(205, 205, 205, 0.505);
+  border-radius: 200px 0 120px 60px;
+}
+
+.chop-shop__cloud-2 {
+  content: "";
+  position: absolute;
+  top: 300px;
+  left: 30%;
+  height: 10px;
+  width: 70vw;
+  background-color: rgba(205, 205, 205, 0.505);
+  border-radius: 200px 100px 105px 0;
+}
+
+.chop-shop__cloud-3 {
+  content: "";
+  position: absolute;
+  top: 340px;
+  left: 10%;
+  height: 10px;
+  width: 70vw;
+  background-color: rgba(205, 205, 205, 0.505);
+  border-radius: 200px 0 120px 60px;
+}
+
+.chop-shop__cloud-4 {
+  content: "";
+  position: absolute;
+  top: 270px;
+  left: 0%;
+  height: 10px;
+  width: 70vw;
+  background-color: rgba(205, 205, 205, 0.505);
+  border-radius: 200px 100px 105px 0;
+}
+
+.chop-shop__airplane {
+  content: "";
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+.chop-shop__airplane-body {
+  content: "";
+  height: 12px;
+  width: 80px;
+  background-color: black;
+  border-radius: 12px 0 12px 0;
+}
+
+.chop-shop__airplane-wing {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 20px;
+  left: 20px;
+  top: -25px;
+  border-radius: 4px 12px;
+  background-color: black;
+  transform: rotate(-20deg);
+}
+
+.chop-shop__airplane-wing2 {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  right: 0px;
+  bottom: 1px;
+  background-color: black;
+  transform: rotate(-35deg);
+}
+
+.countdown-timer-bg {
+  margin: auto;
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 300px;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: 800;
+  color: red;
+}
+
+.chop-trees-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.chop-trees {
+  background: transparent;
+  outline: none;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.tree-stump {
+  position: absolute;
+  width: 20px;
+  height: 200px;
+  background-color: rgb(142, 55, 0);
+  bottom: 0;
+  left: 140px;
+}
+
+.tree-bottom-triangle {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 120px;
+  left: 50px;
+  background-color: green;
+}
+
+.tree-middle-triangle {
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  top: 50px;
+  left: 90px;
+  background-color: green;
+}
+
+.tree-top-triangle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 125px;
+  background-color: green;
+}
+
+.chop-shop-chopping-buttons {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}

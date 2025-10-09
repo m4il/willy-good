@@ -14,6 +14,8 @@ import OrlandoBlog from './pages/blog/blogs/orlando-blog';
 import MaineBlog from './pages/blog/blogs/maine-blog';
 import FirstBikePackingBlog from './pages/blog/blogs/first-bikepacking-blog';
 import RedactiveRecruiting from './pages/blog/blogs/redactive-recruiting/redactive-recruiting'
+import HowToTradeABike from './pages/blog/blogs/how-to-trade-a-bike';
+import ChopShop from './pages/projects/games/chop-shop';
 
 function App() {
   return (
@@ -50,9 +52,15 @@ function App() {
             <RedactiveRecruiting />
           </BlogGateway>
         } />
+        <Route path="/blog/how-to-trade-a-bike" element={
+          <BlogGateway>
+            <HowToTradeABike />
+          </BlogGateway>
+        } />
         <Route path="/photography" element={<Photography />} />
         <Route path="/photography/dark" element={<PhotogDark />} />
         <Route path="/about" element={<About />} />
+        <Route path="/games/chop-shop" element={<ChopShop />} />
       </Routes>
     </HashRouter>
   )

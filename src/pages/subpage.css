@@ -2,6 +2,12 @@
     width: 100vw;
     height: 100vh;
     position: relative;
+    --lightest-blue: rgb(223, 235, 245);
+    --lightest-grey: rgb(247, 253, 255);
+    --light-blue: rgb(200, 224, 245);
+    --medium-blue: rgb(151, 196, 236);
+    --dark-blue: rgb(56, 118, 189);
+    --darker-blue: rgb(14, 0, 87);
 }
 
 .navbar {

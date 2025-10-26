@@ -2,6 +2,7 @@ import React from 'react'
 import SubpageWrapper from '../../subpage-wrapper'
 import Subpage from '../../subpage'
 import BlogsWrapper from './blogs-wrapper'
+import { Subscribe } from '../subscribe'
 
 export const HowToTradeABike = () => {
 
@@ -61,6 +62,7 @@ export const HowToTradeABike = () => {
             <p>You build a unique relationship with someone when you meet online, then blindly trust eachother to mail thousands of dollars of bicycle to eachother. The whole experience was a whirlwind of emotions, and left me feeling super fulfilled. It was a subtle reminder that you might have more in common than you'd think with the random person you meet online.</p>
           </div>
         </BlogsWrapper>
+        <Subscribe />
       </Subpage>
     </SubpageWrapper>
   )

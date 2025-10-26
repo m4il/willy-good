@@ -9,7 +9,7 @@ export const Blog = () => {
         <div className="blogs-list">
             <a className="blog-link__wrapper" href="/willy-good/#blog/how-to-trade-a-bike">
                 <div className="blog-link">
-                    <div className="blog-link__date">August 30, 2025</div>
+                    <div className="blog-link__date">October 26, 2025</div>
                     <img className="blog-link__img-centered" src={process.env.PUBLIC_URL + '/blog/IMG_5685.jpeg'} alt={'Bike'} />
                     <div className="blog-link__title" >How to Trade a Bike</div>
                 </div>
